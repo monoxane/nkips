@@ -226,7 +226,7 @@ class NKIPS extends EventEmitter {
     const buffer = Buffer.from(b, 'hex')
     this.socket.write(buffer)
     setTimeout(() => {
-      resolve(getCrossPoint(destination))
+      resolve(this.getCrossPoint(destination))
     }, 10);
   })
 
