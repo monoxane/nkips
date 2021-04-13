@@ -32,7 +32,8 @@ class NKIPS extends EventEmitter {
     this.device.outputs = outputs
     this.device.levels = levels
     this.labels = new LabelStore({
-      lblString: labels
+      lblString: labels,
+      inputs: inputs
     })
     this.matrix = new MatrixStore({
       inputs: inputs,

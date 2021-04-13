@@ -1,7 +1,13 @@
 class LabelStore {
   constructor ({
-    lblString = ``
+    lblString = ``,
+    inputs
   }) {
+    for (let i = 1; i < inputs; i++) {
+      this.inputs[i] = { label: `In ${i}`, description: `Input ${i}`}
+      this.outputs[i] = { label: `Out ${i}`, description: `Output ${i}`}
+    }
+    console.log(this.inputs)
     const rows = lblString.split('\n')
     rows.map(row => {
       const columns = row.split(',')
@@ -31,14 +37,14 @@ class LabelStore {
     console.log(type, id, update)
     if (type === 'input') {
       console.log(type, id, update)
-      this.inputs[id - 1].label = update.label ?? this.inputs[id - 1].label;
-      this.inputs[id - 1].description = update.description ?? this.inputs[id - 1].description;
+      this.inputs[id].label = update.label ?? this.inputs[id].label;
+      this.inputs[id].description = update.description ?? this.inputs[id].description;
     }
     if (type === 'output') {
       console.log(type, id, update)
-      this.outputs[id - 1].label = update.label ?? this.outputs[id - 1].label;
-      this.outputs[id - 1].description = update.description ?? this.outputs[id - 1].description;
-      console.log(this.outputs[id - 1])
+      this.outputs[id].label = update.label ?? this.outputs[id].label;
+      this.outputs[id].description = update.description ?? this.outputs[id].description;
+      console.log(this.outputs[id])
     }
   }
 
