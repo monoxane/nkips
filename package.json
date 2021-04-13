@@ -1,6 +1,6 @@
 {
   "name": "nkips",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "JS Module to control and manage state for Ross NK Routers via the NK-IPS",
   "main": "src/index.js",
   "author": "Oliver Herrmann <oliver@monoxane.io>",
