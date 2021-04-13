@@ -1,9 +1,27 @@
 {
   "name": "nkips",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JS Module to control and manage state for Ross NK Routers via the NK-IPS",
   "main": "src/index.js",
   "author": "Oliver Herrmann <oliver@monoxane.io>",
   "license": "GPL-3.0",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monoxane/nkips.git"
+  },
+  "keywords": [
+    "production",
+    "broadcast",
+    "router",
+    "video"
+  ],
+  "bugs": {
+    "url": "https://github.com/monoxane/nkips/issues"
+  },
+  "homepage": "https://github.com/monoxane/nkips#readme"
 }
