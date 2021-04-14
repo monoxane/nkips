@@ -163,6 +163,7 @@ class NKIPS extends EventEmitter {
     })
 
     this.socket.on('close', () => {
+      this.emit('close')
       this.connected = false
       switch (this.doNotRecreate) {
         case true:
